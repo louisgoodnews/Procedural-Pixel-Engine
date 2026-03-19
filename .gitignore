@@ -1,0 +1,365 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+bun.lockb
+pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+.vite/
+.cache/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output/
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# next.js build output
+.next
+
+# nuxt.js build output
+.nuxt
+
+# vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# Electron
+release/
+app/dist/
+app/packages/
+
+# Game engine specific
+assets/temp/
+assets/cache/
+blueprints/temp/
+logs/
+crashes/
+dumps/
+profiles/
+
+# Performance data
+perf/
+benchmark/
+*.prof
+*.trace
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local configuration
+config.local.json
+settings.local.json
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Test artifacts
+test-results/
+playwright-report/
+test-results.xml
+
+# Documentation build
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# TypeScript build files
+*.tsbuildinfo
+
+# Package manager lock files (keep one, remove others)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Local development
+.local/
+.localdev/
+
+# Build artifacts
+*.tar.gz
+*.zip
+*.rar
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Certificate files
+*.pem
+*.key
+*.crt
+*.p12
+
+# Cloud deployment
+.aws/
+.azure/
+.gcp/
+
+# Monitoring and analytics
+*.dat
+*.metrics
+*.analytics
+
+# AI/ML model files
+*.model
+*.onnx
+*.tflite
+
+# Asset files (large binaries)
+*.mp4
+*.avi
+*.mov
+*.mp3
+*.wav
+*.ogg
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tga
+*.psd
+*.ai
+*.svg
+
+# 3D model files
+*.fbx
+*.obj
+*.dae
+*.blend
+*.3ds
+*.max
+
+# Texture files
+*.dds
+*.exr
+*.hdr
+*.tiff
+
+# Font files
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.eot
+
+# Archive files
+*.7z
+*.rar
+*.tar
+*.gz
+
+# Config files with secrets
+config/secrets.json
+config/production.json
+.secrets/
+
+# Local overrides
+overrides/
+local/
+
+# Generated documentation
+api-docs/
+typedoc/
+
+# Performance profiles
+*.profile
+*.cpu-profile
+*.heap-profile
+
+# Memory dumps
+*.dmp
+*.core
+
+# Temporary build artifacts
+.tmp/
+.temp/
+*.tmp
+
+# Lighthouse reports
+lighthouse-report.html
+
+# Bundle analyzer reports
+bundle-report.html
+stats.html
+
+# Webpack
+.webpack/
+
+# Rollup
+.rollup.cache
+
+# ESLint
+.eslintcache
+
+# Prettier
+.prettiercache
+
+# Stylelint
+.stylelintcache
+
+# Testing
+coverage/
+.nyc_output/
+junit.xml
+test-results/
+
+# Storybook
+storybook-static/
+
+# Netlify
+.netlify/
+
+# Vercel
+.vercel
+
+# Cloudflare Pages
+.wrangler/
+
+# GitHub Actions
+.github/workflows/temp/
+
+# Local development servers
+*.pid
+*.lock
+
+# Hot reload files
+.hmr/
+
+# Source maps (optional - remove for production)
+*.map
+
+# Minified files
+*.min.js
+*.min.css
+
+# Compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Package files
+*.pkg
+*.deb
+*.rpm
+*.msi
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Kubernetes
+k8s/
+*.kubeconfig
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Ansible
+*.retry
+inventory/
+
+# Local scripts
+scripts/local/
+scripts/dev-only/
+
+# Experimental features
+experimental/
+beta/

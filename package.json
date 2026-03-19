@@ -1,0 +1,202 @@
+{
+  "name": "procedural-pixel-engine",
+  "version": "1.0.0",
+  "description": "A comprehensive, enterprise-grade, multi-platform game development ecosystem",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "private": false,
+  "packageManager": "bun@1.2.5",
+  "homepage": "https://proceduralpixelengine.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/procedural-pixel-engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/procedural-pixel-engine/issues"
+  },
+  "keywords": [
+    "game-engine",
+    "typescript",
+    "webgl",
+    "webgpu",
+    "physics",
+    "audio",
+    "animation",
+    "multiplatform",
+    "enterprise",
+    "ecs",
+    "rendering",
+    "2d",
+    "3d",
+    "vr",
+    "ar",
+    "mobile",
+    "desktop",
+    "console"
+  ],
+  "author": {
+    "name": "Procedural Pixel Engine Team",
+    "email": "team@proceduralpixelengine.com",
+    "url": "https://proceduralpixelengine.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "bun": ">=1.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "dev": "bunx --bun concurrently -k \"bun run dev:renderer\" \"bun run dev:electron\"",
+    "dev:renderer": "bunx --bun vite",
+    "dev:electron": "bash -lc 'until curl -fsS http://127.0.0.1:5173 >/dev/null; do sleep 1; done; bunx electron .'",
+    "dev:web": "bunx --bun vite --mode web",
+    "build": "bun run build:renderer && bun run build:types",
+    "build:renderer": "bunx --bun vite build",
+    "build:types": "bunx --bun tsc --declaration --emitDeclarationOnly --outDir dist",
+    "build:docs": "typedoc src/index.ts",
+    "check": "bunx --bun tsc --noEmit",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "test": "bun test",
+    "test:coverage": "bun test --coverage",
+    "test:watch": "bun test --watch",
+    "test:smoke": "timeout 10s bun run dev",
+    "perf:ecs": "bun run src/engine/performance.smoke.ts",
+    "perf:benchmark": "bun run scripts/benchmark.ts",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "prepare": "bun run build",
+    "prepublishOnly": "bun run test && bun run build",
+    "release": "bun run build && bun run test && npm publish",
+    "clean": "rm -rf dist node_modules/.vite",
+    "start": "bun run dev"
+  },
+  "dependencies": {
+    "electron": "^35.0.0",
+    "gl-matrix": "^3.4.3",
+    "eventemitter3": "^5.0.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/gl-matrix": "^3.2.0",
+    "@types/uuid": "^9.0.8",
+    "@types/node": "^20.11.24",
+    "bun-types": "^1.2.5",
+    "concurrently": "^9.1.2",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.0",
+    "vitepress": "^1.0.0-rc.40",
+    "typedoc": "^0.25.8",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "ts-jest": "^29.1.2",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "prettier": "^3.2.5"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.0.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./core": {
+      "types": "./dist/core/index.d.ts",
+      "import": "./dist/core/index.js"
+    },
+    "./rendering": {
+      "types": "./dist/rendering/index.d.ts",
+      "import": "./dist/rendering/index.js"
+    },
+    "./physics": {
+      "types": "./dist/physics/index.d.ts",
+      "import": "./dist/physics/index.js"
+    },
+    "./audio": {
+      "types": "./dist/audio/index.d.ts",
+      "import": "./dist/audio/index.js"
+    },
+    "./animation": {
+      "types": "./dist/animation/index.d.ts",
+      "import": "./dist/animation/index.js"
+    },
+    "./input": {
+      "types": "./dist/input/index.d.ts",
+      "import": "./dist/input/index.js"
+    },
+    "./ui": {
+      "types": "./dist/ui/index.d.ts",
+      "import": "./dist/ui/index.js"
+    },
+    "./networking": {
+      "types": "./dist/networking/index.d.ts",
+      "import": "./dist/networking/index.js"
+    },
+    "./ai": {
+      "types": "./dist/ai/index.d.ts",
+      "import": "./dist/ai/index.js"
+    },
+    "./vr": {
+      "types": "./dist/vr/index.d.ts",
+      "import": "./dist/vr/index.js"
+    },
+    "./mobile": {
+      "types": "./dist/mobile/index.d.ts",
+      "import": "./dist/mobile/index.js"
+    },
+    "./console": {
+      "types": "./dist/console/index.d.ts",
+      "import": "./dist/console/index.js"
+    },
+    "./security": {
+      "types": "./dist/security/index.d.ts",
+      "import": "./dist/security/index.js"
+    },
+    "./cloud": {
+      "types": "./dist/cloud/index.d.ts",
+      "import": "./dist/cloud/index.js"
+    },
+    "./performance": {
+      "types": "./dist/performance/index.d.ts",
+      "import": "./dist/performance/index.js"
+    },
+    "./accessibility": {
+      "types": "./dist/accessibility/index.d.ts",
+      "import": "./dist/accessibility/index.js"
+    },
+    "./social": {
+      "types": "./dist/social/index.d.ts",
+      "import": "./dist/social/index.js"
+    },
+    "./testing": {
+      "types": "./dist/testing/index.d.ts",
+      "import": "./dist/testing/index.js"
+    },
+    "./utils": {
+      "types": "./dist/utils/index.d.ts",
+      "import": "./dist/utils/index.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/your-org"
+  }
+}

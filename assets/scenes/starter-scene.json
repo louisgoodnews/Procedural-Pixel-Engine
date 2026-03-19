@@ -1,0 +1,40 @@
+{
+  "cellSize": 32,
+  "height": 18,
+  "id": "starter-scene",
+  "name": "starter-plains",
+  "schemaVersion": 1,
+  "updatedAt": "2026-03-19T09:34:56.582Z",
+  "width": 28,
+  "zone": "starter-plains",
+  "placements": [
+    {
+      "id": "scene-player",
+      "blueprintName": "player",
+      "x": 96,
+      "y": 96,
+      "layer": 20
+    },
+    {
+      "id": "scene-villager",
+      "blueprintName": "villager",
+      "x": 180,
+      "y": 112,
+      "layer": 15
+    },
+    {
+      "id": "scene-shrine-a",
+      "blueprintName": "shrine",
+      "x": 260,
+      "y": 160,
+      "layer": 5
+    },
+    {
+      "id": "scene-shrine-b",
+      "blueprintName": "shrine",
+      "x": 420,
+      "y": 260,
+      "layer": 5
+    }
+  ]
+}
