@@ -264,7 +264,7 @@ const config = {
 
 ### Get Help
 - [Discord Community](https://discord.gg/procedural-pixel-engine)
-- [GitHub Discussions](https://github.com/your-org/procedural-pixel-engine/discussions)
+- [GitHub Discussions](https://github.com/louisgoodnews/procedural-pixel-engine/discussions)
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/procedural-pixel-engine)
 - [Reddit](https://reddit.com/r/procedural-pixel-engine)
 
